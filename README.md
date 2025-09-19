@@ -97,6 +97,11 @@ const [params, setParams] = useQueryParams(
 )
 ```
 
+**Default Values Behavior:**
+- Default values are automatically synced to the URL on initial mount
+- If a parameter is not present in the URL, its default value will be added
+- This ensures complete URL-state synchronization and better bookmarking support
+
 ### Validation
 ```tsx
 const [params, setParams] = useQueryParams(
@@ -109,12 +114,18 @@ const [params, setParams] = useQueryParams(
       page: (value) => value > 0,
       email: (value) => value.includes('@')
     },
+    validationFailureMode: 'remove', // 'keep' | 'remove' | 'useDefault'
     onError: (error, key, value) => {
       console.warn(`Validation failed for ${key}:`, error.message)
     }
   }
 )
 ```
+
+**Validation Failure Modes:**
+- `'keep'` - Keep invalid values in URL (original behavior)
+- `'remove'` - Remove invalid values from URL (default)
+- `'useDefault'` - Replace invalid values with default values in URL
 
 ### Custom Serializers
 ```tsx
