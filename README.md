@@ -123,7 +123,7 @@ const [params, setParams] = useQueryParams(
 ```
 
 **Validation Failure Modes:**
-- `'keep'` - Keep invalid values in URL (original behavior)
+- `'keep'` - Keep invalid values in URL 
 - `'remove'` - Remove invalid values from URL (default)
 - `'useDefault'` - Replace invalid values with default values in URL
 
