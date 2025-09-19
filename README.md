@@ -4,13 +4,13 @@ A powerful React hook for synchronizing component state with URL query parameter
 
 ## Features
 
-✨ **Type-Safe**: Full TypeScript support with automatic type inference
-🔄 **Bidirectional Sync**: URL ↔ State synchronization
-🎯 **Multiple Types**: Support for string, number, boolean, date, arrays, and objects
-🛡️ **Validation**: Built-in validation with custom validators
-🔧 **Customizable**: Custom serializers and history modes
-⚡ **Performance**: Optimized with shallow comparison and memoization
-🌐 **Universal**: Works with Next.js, React Router, and any navigation library
+- ✨ **Type-Safe**: Full TypeScript support with automatic type inference
+- 🔄 **Bidirectional Sync**: URL ↔ State synchronization
+- 🎯 **Multiple Types**: Support for string, number, boolean, date, arrays, and objects
+- 🛡️ **Validation**: Built-in validation with custom validators
+- 🔧 **Customizable**: Custom serializers and history modes
+- ⚡ **Performance**: Optimized with shallow comparison and memoization
+- 🌐 **Universal**: Works with Next.js, React Router, and any navigation library
 
 ## Installation
 
@@ -207,4 +207,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-MIT © [Your Name]
+MIT © jujuclub
