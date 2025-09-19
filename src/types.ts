@@ -34,11 +34,14 @@ export type CustomSerializers<T extends QueryparamConfig> = {
 
 export type HistoryMode = 'push' | 'replace'
 
+export type ValidationFailureMode = 'keep' | 'remove' | 'useDefault'
+
 export interface UseQueryParamsOptions<T extends QueryparamConfig> {
     sortKeys?: boolean
     defaultHistory?: HistoryMode
     defaultValues?: DefaultValues<T>
     validation?: ValidationConfig<T>
     customSerializers?: CustomSerializers<T>
+    validationFailureMode?: ValidationFailureMode
     onError?: (error: Error, key: string, value: unknown) => void
 }
